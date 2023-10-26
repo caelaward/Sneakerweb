@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="90">
+
+<!-- START LOADER -->
+<div class="loader-bg">
+    <div id="container">
+        <svg viewBox="0 0 100 100">
+            <defs>
+                <filter id="shadow">
+                    <feDropShadow dx="0" dy="0" stdDeviation="0.5"
+                                  flood-color="#dabd1d"/>
+                </filter>
+            </defs>
+            <circle id="spinner" style="fill:transparent;stroke:#ed2d34;stroke-width: 8px;stroke-linecap: round;filter:url(#shadow);" cx="50" cy="50" r="45"/>
+        </svg>
+    </div>
+</div>
+<!-- END LOADER -->
+
+<!-- START HEADER -->
+<div class="wrap_container cursor-light">
+    <div class="main_container">
+        <div class="side_nav  ">
+            <div class="my-sticky-nav">
+                <div class="side_menu">
+                    <a class="brand-logo link" href="index-product-hotspot.html">
+                        <img src="product-hotspot/images/logo.png" alt="logo" style="height: 87%;width: 87%;"/>
+                    </a>
+                    <div id="my_tog" class="my_tog link" onmouseover="my_click();">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div>
+                        <a class="brand-logo sticky-logo link" href="index-product-hotspot.html">
+                            <img src="product-hotspot/images/logo.png" alt="logo" style="height: 80%;width: 80%;"/>
+                        </a>
+                    </div>
+                    <!-- Sticky Nav -->
+                    <nav class="side-nav-menu ">
+                        <ul class="nav-menu nav-fill" id="menu">
+                            <li class="nav-item">
+                                <a data-menuanchor="home-banner" class="nav-link link active line" href="#home-banner">Home </a>
+                            </li>
+                            <li class="nav-item">
+                                <a data-menuanchor="all-products" class="nav-link link line" href="#all-products">Products</a>
+                            </li>
+                            <li class="nav-item">
+                                <a data-menuanchor="reviews" class="nav-link link line" href="#reviews">Reviews</a>
+                            </li>
+                            <li class="nav-item">
+                                <a data-menuanchor="contact" class="nav-link link line" href="#contact">Contact</a></li>
+                        </ul>
+                        <div class="slider-social side-icons">
+                            <ul class="list-unstyled">
+                                <li><a class="facebook-bg-hvr" href="javascript:void(0);"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a class="twitter-bg-hvr" href="javascript:void(0);"><i class="fab fa-twitter"></i></a></li>
+                                <li><a class="linkedin-bg-hvr" href="javascript:void(0);"><i class="fab fa-linkedin-in"></i></a></li>
+                                <li><a class="instagram-bg-hvr" href="javascript:void(0);"><i class="fab fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                        <p class="rites-res link"><span style="color: #ffffff;">&copy; 2023 MegaOne.</span></p>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!-- Nav-Bar -->
+        <header id="home">
+            <nav class="navbar navbar-light bg-light cursor-light d-md-none">
+                <div class="my_nav_tog d-block d-md-none">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <a class="navbar-brand ml-auto" href="index-product-hotspot.html">
+                    <img src="https://megaone.acrothemes.com/product-hotspot/images/logo.png" alt="Logo" style="height: 100%;width: 100%;">
+                </a>
+            </nav>
+            <div class="broad">
+                <span class="btn-close" id="btn_sideNavClose"><i></i><i></i></span>
+                <nav class="side-nav-menu">
+                    <a class="brand-logo" href="index-product-hotspot.html">
+                        <img src="https://megaone.acrothemes.com/product-hotspot/images/logo.png" alt="Logo" style="height: 90%;width: 90%;"/>
+                    </a>
+                    <ul class="nav-menu nav-fill">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home-banner">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#all-products">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#reviews">Reviews</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="social-icons">
+                        <span><a href="javascript:void(0);"><i class="fab fa-facebook-f"></i></a></span>
+                        <span><a href="javascript:void(0);"><i class="fab fa-twitter"></i></a></span>
+                        <span><a href="javascript:void(0);"><i class="fab fa-linkedin-in"></i></a></span>
+                        <span><a href="javascript:void(0);"><i class="fab fa-instagram"></i></a></span>
+                    </div>
+                    <p class="rites-res"><span class="d-block">&copy; 2023 MegaOne.</span></p>
+                </nav>
+            </div>
+        </header>
+    </div>
+</div>
+<!-- END HEADER -->
+
+<div id="pagepiling">
+    <!-- START BANNER -->
+<section class="section slide1 p-0" id="home-banner">
+    <div class="slider-area" id="slider-area">
+        <div class="bg-overlay bg-green opacity-8"></div>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-md-6">
+                    <h1 class="main-font font-weight-bold text-grey content1 wow" data-wow-delay=".4s">Premium <span class="d-block main-color">Air Max Sneakers </span></h1>
+                    <p class="alt-font text-grey my-3 content1 wow" data-wow-delay=".6s">Lorem ipsum is simply dummy text of the printing and typesetting. Lorem Ipsum has been the industry’s standard dummy. </p>
+                    <a  href="#all-products" class="btn btn-medium btn-rounded btn-trans text-capitalize mt-3 mb-5 mb-md-0 content1 wow" data-wow-delay=".8s">View More</a>
+                </div>
+                <div class="col-12 col-md-6 section1right wow" data-wow-delay=".8s">
+                    <div class="banner-image" data-depth="0.07">
+                        <img src="https://megaone.acrothemes.com/product-hotspot/images/banner-product.png" alt="Banner-Product">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Circle-One -->
+        <div class="circle-one circle1fade wow" data-wow-delay=".2s">
+             <span data-tootik="Comfortable" data-tootik-conf="top invert square shadow">
+                <a href="javascript:void(0);">
+                    <span class="animated-circle position-relative"></span>
+                </a>
+             </span>
+        </div>
+        <!-- Circle-Two -->
+        <div class="circle-two circle2fade wow" data-wow-delay=".4s">
+             <span data-tootik="Flexible Sole" data-tootik-conf="bottom invert square shadow">
+                <a href="javascript:void(0);">
+                    <span class="animated-circle position-relative"></span>
+                </a>
+             </span>
+        </div>
+        <!-- Circle-Three -->
+        <div class="circle-three circle3fade wow" data-wow-delay=".6s">
+              <span data-tootik="Soft Leather" data-tootik-conf="top invert square shadow">
+                    <a href="javascript:void(0);">
+                        <span class="animated-circle position-relative"></span>
+                    </a>
+              </span>
+        </div>
+        <!-- Circle-Four -->
+        <div class="circle-four circle4fade wow" data-wow-delay=".8s">
+              <span data-tootik="Light Weight" data-tootik-conf="bottom invert square shadow">
+                <a href="javascript:void(0);">
+                    <span class="animated-circle position-relative"></span>
+                </a>
+              </span>
+        </div>
+        <!-- Circle-Five -->
+        <div class="circle-five circle5fade wow" data-wow-delay=".95s">
+              <span data-tootik="Arch Support" data-tootik-conf="top invert square shadow">
+                    <a href="javascript:void(0);">
+                        <span class="animated-circle position-relative"></span>
+                    </a>
+              </span>
+        </div>
+    </div>
+</section>
+<!-- END BANNER -->
